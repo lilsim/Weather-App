@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+  padding: 50px;
+  font-family: Arial, sans-serif;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px;
+}
+
+h2 {
+  margin: 20px 0;
+}
