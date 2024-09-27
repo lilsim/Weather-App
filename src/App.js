@@ -1,14 +1,11 @@
 import React from 'react';
-import './App.css';
-import Weather from './Weather';
+// import './index.css';
+import Weather from './Weather.js';
 
 function App() {
   return (
-    <div className="weather">
-      <div className = "search-bar">
-        <input type = "text" placeholder='Search'></input>
-        <img src = "" alt = ""></img>
-      </div>
+    <div className="App">
+      <Weather/>
     </div>
   );
 }
