@@ -1,18 +1,37 @@
-.weather{
+.weather {
     place-self: center;
     padding: 40px;
     border-radius: 12px;
-    background-image: linear-gradient(45deg, #2f4680, #500ae4);
+    background-image: linear-gradient(45deg, #000000, #51555d); /* Light mode default */
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: background-color 0.3s ease;
 }
+
+.dark-mode {
+    background-image: linear-gradient(45deg, #0e3184, #9dabe9); /* Dark mode background */
+}
+
+.toggle-button {
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.toggle-button img {
+    width: 150px; /* Keep button larger */
+    padding: 15px;
+    border-radius: 50%;
+}
+
 .search-bar {
     display: flex;
     align-items: center;
     gap: 12px;
 }
-.search-bar input{
+
+.search-bar input {
     height: 50px;
     border: none;
     outline: none;
@@ -22,46 +41,60 @@
     background: #ebfffc;
     font-size: 18px;
 }
-.search-bar img{
+
+.search-bar img {
     width: 50px;
     padding: 15px;
     border-radius: 50%;
     background: #ebfffc;
     cursor: pointer;
 }
-.weather-icon{
-    width : 150px;
+
+.weather-icon {
+    width: 150px;
     margin: 30px 0;
 }
+
 .temperature {
-    color: #fff;
+    color: #e3dcdc; /* Black text for light mode */
     font-size: 80px;
     line-height: 1;
 }
+
 .location {
-    color: #fff;
+    color: #ebd6d6; /* Black text for light mode */
     font-size: 40px;
 }
-.weather-data{
+
+.dark-mode .temperature, .dark-mode .location {
+    color: #fff; /* White text for dark mode */
+}
+
+.weather-data {
     width: 100%;
     margin-top: 40px;
-    color: #fff;
+    color: #e9d9d9; /* Black text for light mode */
     display: flex;
     justify-content: space-between;
 }
-.weather-data .col{
+
+.dark-mode .weather-data {
+    color: #0c0b0b; /* White text for dark mode */
+}
+
+.weather-data .col {
     display: flex;
     align-items: flex-start;
     gap: 12px;
     font-size: 22px;
 }
-.weather-data .col span{
+
+.weather-data .col span {
     display: block;
     font-size: 16px;
 }
-.weather-data .col img{
+
+.weather-data .col img {
     width: 26px;
     margin-top: 10px;
 }
-
-
