@@ -9,7 +9,7 @@ import rain_icon from '../src/Assets/rain.png';
 import snow_icon from '../src/Assets/snow.png';
 import wind_icon from '../src/Assets/wind.png';
 import sun_icon from '../src/Assets/sun.png';
-import moon_icon from '../src/Assets/moon.png'; // Add sun and moon icons
+import moon_icon from '../src/Assets/moon.png';
 
 localStorage.clear();
 
@@ -23,7 +23,7 @@ const Weather = () => {
     icon: clear_icon, // Default icon
   });
 
-  const [isDarkMode, setIsDarkMode] = useState(false); // Dark mode state
+  const [isDarkMode, setIsDarkMode] = useState(false); 
 
   const allIcons = {
     "01d" : clear_icon,
