@@ -2,7 +2,7 @@
     place-self: center;
     padding: 40px;
     border-radius: 12px;
-    background-image: linear-gradient(45deg, #000000, #51555d); /* Light mode default */
+    background-image: linear-gradient(45deg, #000000, #51555d);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,19 +10,37 @@
 }
 
 .dark-mode {
-    background-image: linear-gradient(45deg, #0e3184, #9dabe9); /* Dark mode background */
+    background-image: linear-gradient(45deg, #0e3184, #9dabe9); 
 }
 
 .toggle-button {
     align-self: flex-end;
     cursor: pointer;
     margin-bottom: 20px;
+    background: none;  
+    border: none;  
+    padding: none;  
+    display: inline-flex;
+    align-items: center;
+    width: 100px;  
+    height: 50px; 
+    border-radius: 30px;  
+    overflow: hidden;  
+    outline: none; 
+    box-shadow: none;
 }
 
 .toggle-button img {
-    width: 150px; /* Keep button larger */
-    padding: 15px;
-    border-radius: 50%;
+    width: 100%; 
+    height: 100%; 
+    object-fit: calc(); 
+    display: block;
+    background: none; 
+    padding: 0;
+    outline: none; 
+    box-shadow: none; 
+    overflow: hidden; 
+    border: none;
 }
 
 .search-bar {
@@ -56,30 +74,30 @@
 }
 
 .temperature {
-    color: #e3dcdc; /* Black text for light mode */
+    color: #e3dcdc; 
     font-size: 80px;
     line-height: 1;
 }
 
 .location {
-    color: #ebd6d6; /* Black text for light mode */
+    color: #ebd6d6;
     font-size: 40px;
 }
 
 .dark-mode .temperature, .dark-mode .location {
-    color: #fff; /* White text for dark mode */
+    color: #fff; 
 }
 
 .weather-data {
     width: 100%;
     margin-top: 40px;
-    color: #e9d9d9; /* Black text for light mode */
+    color: #e9d9d9;
     display: flex;
     justify-content: space-between;
 }
 
 .dark-mode .weather-data {
-    color: #0c0b0b; /* White text for dark mode */
+    color: #0c0b0b;
 }
 
 .weather-data .col {
@@ -95,6 +113,6 @@
 }
 
 .weather-data .col img {
-    width: 26px;
+    width: 35px;
     margin-top: 10px;
 }
